@@ -53,12 +53,12 @@
             <!-- Task: show questions and choices -->
             <!-- <HINT> Use Bootstrap Collapse to hide exam first, more details could be found here
             https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp-->
+            <br>
+            <center><button data-toggle="collapse" data-target="#exam">Exam</button></center>
+            <br>
+
             <div id="exam" class="collapse">
                 {% if user.is_authenticated %}
-                Click to expand elements within the collapse div
-                <br>
-                <center><button data-toggle="collapse" data-target="#exam">Hide</button></center>
-                <br>
 
             <form id="questionform" action="point to a submit view" method="post">
                         {% for lesson in course.lesson_set.all %}
